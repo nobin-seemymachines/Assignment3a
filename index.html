@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- Header -->
+        <header>
+            <nav class="navbar">
+                <button id="open-btn" onclick="openNav()">&#9776</button>
+                <h1>
+                    Car Rentals
+                </h1>
+                <ul class=" nav-items">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="mySidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" onclick="closeNav()">Home</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#contact" onclick="closeNav()">Contact Us</a>
+        </div>
+
+
+
+        <!-- <main section> -->
+        <main>
+
+            <!-- home section -->
+            <section class="home" id="home">
+                <h2>Book your drive now!</h2>
+                <form action="">
+                    <input type="text" placeholder="Pickup Location">
+                    <input type="datetime-local" name="" id="">
+                    <input type="text" placeholder="Drop Off Location">
+                    <input type="datetime-local" name="" id="">
+                    <button>Get Car</button>
+                </form>
+                <div class="available">
+                    <h3>Available Cars</h3>
+                    <div class="home-cars">
+                        <div class="available-cars">
+                            <img src="https://img.indianautosblog.com/2019/08/07/grand-i10-nios-4674.jpg" alt="Swift">
+                            <h2>hyundai i10</h2>
+                            <p>1500/day</p>
+                            <button>Book Now</button>
+                        </div>
+                        <div class="available-cars">
+                            <img src="https://img.gaadicdn.com/images/car-images/large/Maruti/Swift/7820/1614160452458/227_Pearl-Arctic-White-midnight-black_d4d5d4.jpg"
+                                alt="Swift vxi">
+                            <h2>Swift vxi</h2>
+                            <p>1200/day</p>
+                            <button>Book now</button>
+                        </div>
+                        <div class="available-cars">
+                            <img src="https://imgd.aeplcdn.com/1056x594/n/gyi5rsa_1478500.jpg?q=85" alt="Thar">
+                            <h2>Tata altroz</h2>
+                            <p>1500/day</p>
+                            <button>Book now</button>
+                        </div>
+                        <div class="available-cars">
+                            <img src="https://img.indianauto.com/2020/11/12/TqbeqESC/kia-seltos-2020-front-97db.jpg"
+                                alt="Kia Seltos">
+                            <h2>Kia Seltos</h2>
+                            <p>2000/day</p>
+                            <button>Book Now</button>
+                        </div>
+                        <div class="available-cars" >
+                            <img src="https://1.bp.blogspot.com/-RMrDXsT0E0k/XrwQ30Myc9I/AAAAAAAAdXs/m40xcR112N0tJEBl0oWLcl0tHOi8SWnegCLcBGAsYHQ/s1600/Creta%2BAction_4.jpg"
+                                alt="hyundai creta">
+                            <h2>hyundai creta</h2>
+                            <p>1200/day</p>
+                            <button >Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- services section -->
+            <section class="services" id="services">
+                <h2>OUR SERVICES</h2>
+                <div class="main-service">
+                    <div class="slide"> 
+                        <h2>On-demand Cab services</h2>
+                        <p>This is the most popularly used car service, where you get a vehicle on-demand with a
+                            chauffeur/driver. Cab services are the immediate alternatives for public transport like city
+                            taxis, autos, and buses. The car ride is booked online through an app and the driver picks
+                            you up from your location taking you to your destination for a charge that is appropriate
+                            for that hour of the day.</p>
+                    </div>
+                    <div class="slide">
+                        <h2>Self-drive rental car</h2>
+                        <p>Here you get a vehicle on rent to suffice travelling needs but without the driver. The
+                            company provides you with a well-maintained car of your choice for a certain period against
+                            rent. You can rent it for a few days, every month, or just a day. Different packages
+                            determine the rent as per the car model, the duration, and other vehicular features.
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <h2>Intercity Car Rental</h2>
+                        <p>Intercity car rental services allow you to rent a vehicle from your city to another and vice
+                            versa. These can be self-driven cars or ones with drivers, as per your preference.</p>
+                    </div>
+                    <div class="slide">
+                        <h2>Outstation Car Rental Services</h2>
+                        <p>Suppose you are vacationing in a different city and you require a means of conveyance that
+                            you can access 24x7. Outstation car rental services usually run a pan-India network, where
+                            the company has the connections to provide you with a vehicle in a city other than yours for
+                            any period.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact us Section -->
+            <section class="contact" id="contact">
+                <h2>CONTACT US</h2>
+                <div class="main-contact">
+                    <div class="accordion-btn">
+                        <button class="accordion">Address 1</button>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi.</p>
+                        <button class="accordion">Address 2</button>
+                        <p>Lorem ipsum dolor sit.
+                            Ut dignissimos delectus earum.
+                            Dolorum, quod? Obcaecati, debitis.
+                            Velit ipsam officia beatae.</p>
+                        <button class="accordion">Address 3</button>
+                        <p>Lorem ipsum dolor sit amet.
+                            Aut ab tempora asperiores numquam?
+                            Officia repellat similique corporis laborum.</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.490809564281!2d76.94966822174057!3d8.524072436955809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbd88d99a55d%3A0xbac80fdc6e727c01!2zUGxhbmV0IEcgU3lzdGVtcy4g4LSq4LWN4LSy4LS-4LSo4LSx4LWN4LSx4LWNIOC0nOC0vyDgtLjgtL_gtLjgtY3gtLHgtY3gtLHgtILgtLjgtY0!5e0!3m2!1sen!2sin!4v1700031130573!5m2!1sen!2sin"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy and Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+            <p>&copy;2023 copyright - All rights reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

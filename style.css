@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    /* background-image: url("https://github.com/nobin-seemymachines/Assignment_3/blob/main/wp2869302.jpg"); */
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(31, 87, 159, 1) 29%, rgba(62, 24, 150, 1) 77%, rgba(57, 15, 149, 1) 100%);
+    /* background-image: url("https://wallpapercave.com/wp/wp2869302.jpg"); */
+    /* background-color: rgb(42, 23, 56); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 8% 20px 3%;
+    position: fixed;
+    top: 0;
+}
+
+.navbar h1 {
+    margin-right: auto;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar h1:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.nav-items li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-items {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+.nav-items a {
+    color: bisque;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-items a:hover {
+    color: white;
+}
+
+.navbar button {
+    margin-right: 5%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background: transparent; */
+    /* background-color: white; */
+    /* background-color: rgba(25, 8, 85, 0.822); */
+    /* background-color: rgba(11, 11, 92, 0.342); */
+    background-color: rgba(4, 4, 12, 0.685);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    margin-top: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: 0.8s;
+}
+
+.sidebar a:hover {
+    color: #a680ff;
+}
+
+
+.sidebar .closebtn {
+    transition: 0.8s;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 2.5rem;
+    margin-left: 50px;
+
+}
+
+.navbar button {
+    background: transparent;
+    color: aliceblue;
+    padding: 2px 4px;
+    width: 40px;
+    height: auto;
+    border: 1px solid white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: rgb(61, 61, 255);
+    transition: 0.8s;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.685);
+    color: rgb(221, 221, 221);
+    position: fixed;
+
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    width: 50%;
+    margin-bottom: 40px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+footer li,
+a {
+    list-style: none;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+/* ------------------- */
+main {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green;     */
+}
+
+.home h2 {
+    color: wheat;
+}
+
+form {
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+input {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 1rem;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    /* margin: 15px; */
+}
+
+::placeholder {
+    color: antiquewhite;
+
+}
+
+form button {
+    background: transparent;
+    /* background-color: #1a125e; */
+    border: 1px solid white;
+    border-radius: 10px;
+    /* margin: 15px; */
+    width: 120px;
+    font-size: 1rem;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+form button:hover {
+    font-weight: bolder;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-color: white;
+}
+
+.available {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: wheat;
+}
+
+.home-cars {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+}
+
+.available-cars {
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    text-transform: uppercase;
+    /* background-color: rgba(57, 57, 255, 0.329); */
+}
+
+.available-cars img {
+    width: 100%;
+    height: 50%;
+}
+
+.available-cars button {
+    background-color: transparent;
+    color: bisque;
+    padding: 5px 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid bisque;
+    margin-bottom: 30px;
+}
+
+.available-cars button:hover {
+    transition: 0.5s;
+    background-color: rgb(34, 24, 88);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.services {
+    /* background-color: rgb(90, 46, 46); */
+    width: 70%;
+    /* height: 450px; */
+    margin-top: 150px;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.main-service {
+    width: 80%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 80%;
+    gap: 20px;
+}
+
+.main-service div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    /* border: 1px solid #a680ff; */
+    padding: 30px;
+}
+
+
+
+.main-service div h2 {
+
+    letter-spacing: 2px;
+}
+
+.main-service div p {
+    margin-top: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 28px;
+}
+
+/* .main-service div:nth-child(1) {
+    
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/09/Cars-Full-HD-Free-Download-Wallpapers.jpg");
+} */
+
+.contact {
+    /* background-color: green; */
+    width: 70%;
+    /* height: 450px; */
+    margin-top: 150px;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.main-contact {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.accordion-btn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-btn button {
+    background-color: transparent;
+    color: bisque;
+    padding: 5px 10px;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: 1px solid bisque;
+}
+
+.accordion-btn button:hover {
+    background-color: rgb(34, 24, 88);
+    color: white;
+    border: none;
+}
+
+.accordion-btn p {
+    display: none;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    line-height: 22px;
+    border: 1px solid #a680ff;
+    padding: 10px;
+}
+
+
+/* Slider */
